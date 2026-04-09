@@ -1,7 +1,7 @@
 name: Deploy Pygame Web
 on:
   push:
-    branches: [main] # Vérifie que ta branche principale s'appelle bien main
+    branches: [main]
 
 permissions:
   contents: write
@@ -11,16 +11,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4 # v4 au lieu de v3 pour Node 20+
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
 
       - name: Install and run Pygbag
         run: |
-          pip install pygbag
-          # On compile le dossier courant (.), --build génère le dossier web
+          python3 -m pip install pygbag
+          # On ajoute --no-opt si jamais l'optimisation audio pose problème
           python3 -m pygbag --build .
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: build/web # Le dossier généré par pygbag
-          branch: gh-pages # La branche où sera stocké le site
+          folder: build/web
+          branch: gh-pages
