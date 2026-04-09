@@ -24,7 +24,7 @@ class Game:
 
     def __init__(self) -> None:
         pygame.display.set_caption("Peace and love racing™")
-        self.display = pygame.display.set_mode((1400, 850), pygame.FULLSCREEN | pygame.SCALED)
+        self.display = pygame.display.set_mode((1400, 850), pygame.SCALED)
         self.score = 0
         
         try:
