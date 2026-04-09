@@ -4,6 +4,8 @@
 
 Ce dépôt contient le code source de mon projet final d'informatique (spécialité NSI) réalisé en classe de Terminale. Il s'agit d'un jeu de course d'évitement développé entièrement en Python.
 
+[Accéder au projet]([http://a.com](https://vavan-13.github.io/peace-and-love-racing/))
+
 ## 🎯 Objectif Pédagogique : La Programmation Orientée Objet (POO)
 
 Le but principal de cet exercice était de comprendre et d'appliquer les concepts de la **Programmation Orientée Objet**. Au lieu de faire un script classique de haut en bas, toute l'architecture du code repose sur l'utilisation des **classes**.
