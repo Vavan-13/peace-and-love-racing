@@ -4,7 +4,7 @@
 
 Ce dépôt contient le code source de mon projet final d'informatique (spécialité NSI) réalisé en classe de Terminale. Il s'agit d'un jeu de course d'évitement développé entièrement en Python.
 
-[Accéder au projet]([http://a.com](https://vavan-13.github.io/peace-and-love-racing/))
+[Accéder au projet](https://vavan-13.github.io/peace-and-love-racing/)
 
 ## 🎯 Objectif Pédagogique : La Programmation Orientée Objet (POO)
 
@@ -33,4 +33,3 @@ Si Pygame n'est pas installé, ouvrez un terminal et tapez :
 
 ```bash
 pip install pygame
-```
