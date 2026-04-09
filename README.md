@@ -19,7 +19,7 @@ Cela permet d'avoir un code beaucoup plus propre, modulaire et facile à mainten
 
 ## 🛠️ Technologies Utilisées
 
-- **Langage :** Python 3.x
+- **Langage :** Python
 - **Bibliothèque principale :** [Pygame](https://www.pygame.org/) (gestion de la fenêtre, des collisions, de la musique et des événements clavier).
 
 ## 🚀 Comment y jouer ?
