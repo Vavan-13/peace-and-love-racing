@@ -8,10 +8,10 @@ pygame.init()
 # Astuce : On met les chargements dans des try/except au cas où 
 # un fichier manque, pour éviter que tout le jeu plante d'un coup.
 try:
-    pygame.mixer.music.load("musique.mp3")
+    pygame.mixer.music.load("musique.ogg")
     pygame.mixer.music.play(-1)
     pygame.mixer.music.set_volume(1)
-    accident_fx = pygame.mixer.Sound("accident.wav")
+    accident_fx = pygame.mixer.Sound("accident.ogg")
     accident_fx.set_volume(1)
 except FileNotFoundError:
     print("Fichiers audio manquants. Lancement sans le son.")
